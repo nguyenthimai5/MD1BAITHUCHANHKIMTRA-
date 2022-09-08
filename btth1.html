@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Tính tuổi của anh và bố</h2>
+<input id="hienra" type="text">
+<button onclick="tinhTuoi()">Tính tuổi</button>
+<p id="ketQua1"></p>
+<p id="ketQua2"></p>
+<script>
+    function tinhTuoi() {
+        let a=+document.getElementById('hienra').value;
+        let b=a+3;
+        let c=b*6;
+            document.getElementById('ketQua1').innerHTML="tuổi của anh là :"+b;
+            document.getElementById('ketQua2').innerHTML="tuổi của bố là:"+c
+    }
+
+
+
+
+</script>
+</body>
+</html>

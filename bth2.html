@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>kiểm tra tam giác có phải là tam giác vuông không</h2>
+Cạnh a:<input  id="a" type="text"><br>
+Cạnh b:<input  id="b" type="text"><br>
+Cạnh h:<input  id="h" type="text"><br>
+<button onclick="tamGiac()">Check</button>
+<p id="ketQua1"></p>
+<script>
+  function tamGiac() {
+    let a=+document.getElementById('a').value;
+    let b=+document.getElementById('b').value;
+    let h=+document.getElementById('h').value;
+    if(a>0&&b>0&&h>0&&a+b>h&&a+h>b&&h+b>a){
+      if (h*h==(a*a)+(b*b)){
+        document.getElementById('ketQua1').innerHTML=a+","+b+","+c+"là hình tam giác vuông"
+      }else if (a*a==(h*h)+(b*b)) {
+        document.getElementById('ketQua1').innerHTML=a+","+b+","+c+" là hình tam giác vuông"
+      }else if (b*b==(a*a)+(h*h)){
+          document.getElementById('ketQua1').innerHTML=a+","+b+","+c+" là hình tam giác vuông"
+      }else {
+          document.getElementById('ketQua1').innerHTML=a+","+b+","+c+" là hình tam giác nhưng không phải là tam giác vuông"
+      }
+
+    }else {
+      document.getElementById('ketQua1').innerHTML=a+","+b+","+c+'không phải là hình tam giác'
+    }
+  }
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>in ra tuổi của người nhập theo can</h2>
+<input id="tuoi" type="text">
+<button onclick="tinhTuoi()">Check</button>
+<p id="ketQua"></p>
+<script>
+  function tinhTuoi() {
+      let t = +document.getElementById('tuoi').value;
+      let d = t % 10;
+      let e = t % 12;
+      let checkd;
+      let checke;
+          switch (e) {
+              case 0:
+                  checke = "THÂN";
+                  break;
+              case 1:
+                  checke = "DẬU";
+                  break
+              case 2:
+                  checke = "TUẤT";
+                  break
+              case 3:
+                  checke = "HỢI";
+                  break
+              case 4:
+                  checke = "TÝ";
+                  break
+              case 5:
+                  checke = "SỬU";
+                  break
+              case 6:
+                  checke = "DẦN";
+                  break
+              case 7:
+                  checke = "MÃO";
+                  break
+              case 8:
+                  checke = "THÌN";
+                  break
+              case 9:
+                  checke = "TỴ";
+                  break
+              case 10:
+                  checke = "NGỌ";
+                  break
+              case 11:
+                  checke = "MÙI";
+                  break
+          }
+                  switch (d) {
+                      case 0:
+                          checkd = "CANH";
+                          break;
+                      case 1:
+                          checkd= "TÂN";
+                          break
+                      case 2:
+                          checkd= "NHÂM";
+                          break
+                      case 3:
+                          checkd = "QUÝ";
+                          break
+                      case 4:
+                          checkd = "GIÁP";
+                          break
+                      case 5:
+                          checkd = "ẤT";
+                          break
+                      case 6:
+                          checkd = "BÍNH";
+                          break
+                      case 7:
+                          checkd = "ĐINH";
+                          break
+                      case 8:
+                          checkd = "MẬU";
+                          break
+                      case 9:
+                          checkd= "KỸ";
+                          break
+
+                  }
+
+           document.getElementById('ketQua').innerHTML=checkd+checke
+      }
+
+</script>
+</body>
+</html>
